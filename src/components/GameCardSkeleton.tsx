@@ -1,8 +1,9 @@
-import { Skeleton, SkeletonText, Card, CardBody } from "@chakra-ui/react";
+import { Card, CardBody, Skeleton, SkeletonText } from "@chakra-ui/react";
+
 const GameCardSkeleton = () => {
   return (
     <Card borderRadius={15} overflow="hidden">
-      <Skeleton h={[100, 200]} />
+      <Skeleton height={{ sm: "200px", lg: "36vh" }} />
       <CardBody>
         <SkeletonText />
       </CardBody>

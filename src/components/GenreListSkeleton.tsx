@@ -1,16 +1,14 @@
-import { HStack, Skeleton, SkeletonText } from "@chakra-ui/react";
+import { HStack, Heading, Skeleton, SkeletonText } from "@chakra-ui/react";
 import React from "react";
 
 const GenreListSkeleton = () => {
   return (
-    <HStack alignItems="center" paddingY="5px">
-      <Skeleton height="32px" width="32px" />
-      <SkeletonText
-        noOfLines={1}
-        spacing="4"
-        skeletonHeight="3"
-        width="135px"
+    <HStack paddingY={2}>
+      <Skeleton
+        height={{ lg: "7vh", xl: "40px" }}
+        width={{ lg: "7vh", xl: "40px" }}
       />
+      <SkeletonText noOfLines={2} spacing="2" skeletonHeight="2" width="100%" />
     </HStack>
   );
 };
