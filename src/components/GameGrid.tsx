@@ -31,7 +31,7 @@ const GameGrid = ({
         spacing={4}
         columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
       >
-        {isLoading &&
+        {!isLoading &&
           GameSkeleton.map((skeleton) => <GameCardSkeleton key={skeleton} />)}
         {!isLoading &&
           data.map((game) => <GameCard game={game} key={game.id} />)}
