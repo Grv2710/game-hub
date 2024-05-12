@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { IoIosPhonePortrait, IoLogoAndroid } from "react-icons/io";
 import { SiNintendogamecube } from "react-icons/si";
-import { Platform } from "./GameGrid";
+import { Platform } from "../hooks/useGames";
 import { HStack, Icon } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 
